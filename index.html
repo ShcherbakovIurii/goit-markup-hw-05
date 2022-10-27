@@ -31,7 +31,9 @@
         </div>
         <nav>
           <ul class="site-nav list">
-            <li class="item"><a href="#" class="link">Студія</a></li>
+            <li class="item">
+              <a href="#" class="link link-current">Студія</a>
+            </li>
             <li class="item">
               <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
@@ -64,7 +66,9 @@
       <section class="hero">
         <div class="container overlay">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button-primary" type="button">Замовити послугу</button>
+          <button class="button-primary" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!-- Переваги  <h2 hidden> особливості </h2>, а <h3>увага до діталей </h3>-->
@@ -128,29 +132,32 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list list">
-            <li class="item">
+            <li class="item work-item">
               <img
                 src="./img/Photocomp1.png"
                 alt="Computer"
                 width="370"
                 height="294"
               />
+              <div class="work-name">Десктопні додатки</div>
             </li>
-            <li class="item">
+            <li class="item work-item">
               <img
                 src="./img/Photocomp2.png"
                 alt="Computer"
                 width="370"
                 height="294"
               />
+              <div class="work-name">Мобільні додатки</div>
             </li>
-            <li class="item">
+            <li class="item work-item">
               <img
                 src="./img/Photocomp3.png"
                 alt="Computer"
                 width="370"
                 height="294"
               />
+              <div class="work-name">Дизайнерські рішення</div>
             </li>
           </ul>
         </div>
@@ -444,5 +451,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-close" data-modal-close type="submit">
+          <svg class="icon-close-black" width="18" height="18">
+            <use href="./img/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
