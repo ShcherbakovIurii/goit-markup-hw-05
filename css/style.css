@@ -93,8 +93,6 @@ img {
 }
 
 .logo-link-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   margin-right: 93px;
 }
 
@@ -144,12 +142,12 @@ img {
   display: flex;
   align-items: center;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
   gap: 10px;
   color: var(--title-text-color);
   text-decoration: none;
   position: relative;
-  transition: color 100ms var(--transition-timing-function);
+  transition: color 250ms var(--transition-timing-function);
 }
 
 .link-current {
@@ -201,6 +199,10 @@ img {
 .item-header {
   display: flex;
   align-items: center;
+}
+
+.icon-header{
+  transition: fill 250ms var(--transition-timing-function);
 }
 
 /* Герой */
